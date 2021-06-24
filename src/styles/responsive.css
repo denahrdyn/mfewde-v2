@@ -1,0 +1,48 @@
+@media screen and (min-width: 650px) {
+    .app-bar {
+        grid-template-columns: 1fr auto;
+        padding: 8px 32px;
+    }
+
+    .app-bar .app-bar__menu {
+        display: none;
+    }
+
+    .app-bar .app-bar__navigation {
+        position: static;
+        width: 100%;
+    }
+
+    .app-bar .app-bar__navigation ul li {
+        display: inline-block;
+    }
+
+    .app-bar .app-bar__navigation ul li a {
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .main-content {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 26px;
+        grid-row-gap: 26px;
+    }
+}
